@@ -1,0 +1,26 @@
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    N = int(input())
+    li = []
+
+    for N_itr in range(N):
+        firstNameEmailID = input()
+        li.append(firstNameEmailID)
+
+
+   
+    lis=[]
+    for line in li:
+        if '@gmail.com' in line:
+            val = line.split()
+            lis.append(val[0])
+    lis.sort()
+    for value in lis:
+        print(value)
